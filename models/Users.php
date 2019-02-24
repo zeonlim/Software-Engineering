@@ -24,7 +24,7 @@ class Users extends Model
 	{
 		$conn = $this->conn;
 		$result = 0;
-		$users = $this->getOneBy([
+		$users =  parent::getOneBy([
 			'email' => $email
 		]);
 
@@ -47,7 +47,7 @@ class Users extends Model
 		
 		$conn = $this->conn;
 		$result = 0;
-		$status = $this->getOneBy([
+		$status =  parent::getOneBy([
 			'email' => $data['email']
 		]);
 
