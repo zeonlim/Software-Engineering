@@ -9,9 +9,12 @@ class UsersController extends Controller
 	public function actionIndex()
 	{
 		$model = new Users;
-		$users = $model->getAll();
+		$testings = $model->testing(3);
+		/*$testings = $model->testing(3,[
+			'name' =>  'zann'
+		]);*/
 		return $this->render('index' , [
-			'users' => $users,
+			'testings' => $testings,
 		]);
 	}
 
