@@ -1,0 +1,88 @@
+
+.frame{
+  width: 210px;
+  height: 0px;
+  margin: -200px;
+  margin-top: 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.frame1{
+  width: 210px;
+  height: 0px;
+  margin: -200px;
+  margin-top: 500px;
+  position: relative;
+  cursor: pointer;
+}
+
+.frame:hover .hex-inner{
+  height: 100px;
+  top: 90px !important;
+  border-radius: 4px;
+}
+
+.frame:hover .label{
+  transform: scale(.90);
+  -webkit-transform: scale(.90);
+}
+
+.frame1:hover .hex-inner{
+  height: 100px;
+  top: 90px !important;
+  border-radius: 4px;
+}
+
+.frame1:hover .label{
+  transform: scale(.90);
+  -webkit-transform: scale(.90);
+}
+
+.hex-outer{
+  background: #000000;
+  width: 210px;
+  height: 120px;
+}
+
+.hex-inner{
+  background: #ffffff;
+  width: 200px;
+  height: 115px;
+  position: relative;
+  left: 5px;
+  top: 82px !important;
+  border-radius: 0;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.h1{
+  position: absolute;
+  top: 80px;
+}
+
+.h2{
+  position: absolute;
+  top: 80px;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+}
+
+.h3{
+  position: absolute;
+  top: 80px;
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+
+.label{
+  position: absolute;
+  color: #000000;
+  font-weight: bold;
+  font-size: 160px;
+  left: -37px;
+  top: 46px;
+    transition: all .4s;
+  -webkit-transition: all .4s;
+}
