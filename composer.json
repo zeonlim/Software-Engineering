@@ -1,0 +1,15 @@
+{
+    "name": "user/breath-apps",
+    "authors": [
+        {
+            "name": "Zeon Lim",
+            "email": "zeon@inspiren.my"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+        }
+    },
+    "require": {}
+}
