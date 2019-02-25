@@ -3,7 +3,7 @@ namespace app\models;
 
 use app\base\Model;
 
-class User extends Model
+class Example extends Model
 {
 	public $tableName ='user';
 	

@@ -17,14 +17,13 @@ class Users extends Model
 
 	public function testing($id)
 	{
-		return parent::delete($id);
+		return $this->delete($id);
 	}
 	
 	public function forgotPassword($email,$password)
 	{
-		$conn = $this->conn;
 		$result = 0;
-		$users =  parent::getOneBy([
+		$users =  $this->getOneBy([
 			'email' => $email
 		]);
 
@@ -45,9 +44,8 @@ class Users extends Model
 	public function register($data)
 	{
 		
-		$conn = $this->conn;
 		$result = 0;
-		$status =  parent::getOneBy([
+		$status =  $this->getOneBy([
 			'email' => $data['email']
 		]);
 

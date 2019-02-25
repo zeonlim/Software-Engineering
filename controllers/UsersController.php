@@ -9,7 +9,7 @@ class UsersController extends Controller
 	public function actionIndex()
 	{
 		$model = new Users;
-		$testings = $model->testing(3);
+		$testings = $model->forgotPassword('zeon@inspiren.my',6689021312);
 		/*$testings = $model->testing(3,[
 			'name' =>  'zann'
 		]);*/

@@ -16,7 +16,7 @@
 		$form.on('submit', function(e) {
 			var data = $(this).serializeArray();
 			$.ajax({
-				url: '<?=URL_BASE?>/home/ajax-create-user',
+				url: '<?=URL_BASE?>/example/ajax-create-user',
 				method: 'POST',
 				data: data,
 				beforeSend: function () {
@@ -37,7 +37,7 @@
 
 		function init() {
 			$.ajax({
-				url: '<?=URL_BASE?>/home/ajax-get-user',
+				url: '<?=URL_BASE?>/example/ajax-get-user',
 				success: function (json) {
 					$wrapper.html('');
 					$.each(json, function(i, row) {
@@ -64,7 +64,7 @@
 			var $wapper = $(wrapper[0]);
 			var id = $wapper.data('id');
 			$.ajax({
-				url: '<?=URL_BASE?>/home/ajax-delete-user?id=' + id,
+				url: '<?=URL_BASE?>/example/ajax-delete-user?id=' + id,
 				method: 'POST',
 				success: function (json) {
 					init();
@@ -85,7 +85,7 @@
 			$input.on('keyup', function (e) {
 				if (e.which == 13) {
 					$.ajax({
-						url: '<?=URL_BASE?>/home/ajax-update-user?id=' + id,
+						url: '<?=URL_BASE?>/example/ajax-update-user?id=' + id,
 						method: 'POST',
 						data: {
 							name: $input.val(),
